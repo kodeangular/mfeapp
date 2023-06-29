@@ -30,5 +30,32 @@
 - Update app-component.html
   - Add router-outlet
 - ng serve mfe1
+
   - http://localhost:4201
   - http://localhost:4201/flights-search
+
+- Expose MFE1 Modules
+
+  - Update webpack.config.js
+
+  ```
+      const {
+          shareAll,
+          withModuleFederationPlugin,
+          } = require("@angular-architects/module-federation/webpack");
+
+      module.exports = withModuleFederationPlugin({
+          name: "mfe1",
+          exposes: {
+              "./Module": "./projects/mfe1/src/app/flights/flights.module.ts",
+          },
+
+          shared: {
+              ...shareAll({
+              singleton: true,
+              strictVersion: true,
+              requiredVersion: "auto",
+              }),
+          },
+      });
+  ```
