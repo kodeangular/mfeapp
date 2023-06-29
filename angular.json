@@ -3,97 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mfeapp": {
-      "projectType": "application",
-      "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:browser",
-          "options": {
-            "outputPath": "dist/mfeapp",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          },
-          "configurations": {
-            "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
-                }
-              ],
-              "outputHashing": "all"
-            },
-            "development": {
-              "buildOptimizer": false,
-              "optimization": false,
-              "vendorChunk": true,
-              "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "configurations": {
-            "production": {
-              "browserTarget": "mfeapp:build:production"
-            },
-            "development": {
-              "browserTarget": "mfeapp:build:development"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "mfeapp:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
-            "tsConfig": "tsconfig.spec.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
-        }
-      }
-    },
     "shell": {
       "projectType": "application",
       "schematics": {},
@@ -107,17 +16,13 @@
             "outputPath": "dist/shell",
             "index": "projects/shell/src/index.html",
             "main": "projects/shell/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/shell/tsconfig.app.json",
             "assets": [
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
             ],
-            "styles": [
-              "projects/shell/src/styles.css"
-            ],
+            "styles": ["projects/shell/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -168,18 +73,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/shell/tsconfig.spec.json",
             "assets": [
               "projects/shell/src/favicon.ico",
               "projects/shell/src/assets"
             ],
-            "styles": [
-              "projects/shell/src/styles.css"
-            ],
+            "styles": ["projects/shell/src/styles.css"],
             "scripts": []
           }
         }
@@ -198,17 +98,13 @@
             "outputPath": "dist/mfe1",
             "index": "projects/mfe1/src/index.html",
             "main": "projects/mfe1/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe1/tsconfig.app.json",
             "assets": [
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
             ],
-            "styles": [
-              "projects/mfe1/src/styles.css"
-            ],
+            "styles": ["projects/mfe1/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -259,18 +155,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/mfe1/tsconfig.spec.json",
             "assets": [
               "projects/mfe1/src/favicon.ico",
               "projects/mfe1/src/assets"
             ],
-            "styles": [
-              "projects/mfe1/src/styles.css"
-            ],
+            "styles": ["projects/mfe1/src/styles.css"],
             "scripts": []
           }
         }
@@ -289,17 +180,13 @@
             "outputPath": "dist/mfe2",
             "index": "projects/mfe2/src/index.html",
             "main": "projects/mfe2/src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "projects/mfe2/tsconfig.app.json",
             "assets": [
               "projects/mfe2/src/favicon.ico",
               "projects/mfe2/src/assets"
             ],
-            "styles": [
-              "projects/mfe2/src/styles.css"
-            ],
+            "styles": ["projects/mfe2/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -350,18 +237,13 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "projects/mfe2/tsconfig.spec.json",
             "assets": [
               "projects/mfe2/src/favicon.ico",
               "projects/mfe2/src/assets"
             ],
-            "styles": [
-              "projects/mfe2/src/styles.css"
-            ],
+            "styles": ["projects/mfe2/src/styles.css"],
             "scripts": []
           }
         }
