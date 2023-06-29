@@ -12,6 +12,15 @@ const routes: Routes = [
         exposedModule: './Module',
       }).then((m) => m.FlightsModule),
   },
+  {
+    path: 'trains',
+    loadChildren: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4202/remoteEntry.js',
+        exposedModule: './Module',
+      }).then((m) => m.TrainsModule),
+  },
 ];
 
 @NgModule({
