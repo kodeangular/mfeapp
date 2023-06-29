@@ -59,3 +59,12 @@
           },
       });
   ```
+
+# S4 Switch to Shell Application :: HOST APPLICATION
+
+- Update webpack.config.js
+  - Check for remote entry
+- Update app-routing-module.ts
+  - Check, how the remoteEntry loaded as route
+- update app.component.html
+  - provide nagigation link
