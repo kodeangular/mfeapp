@@ -37,6 +37,7 @@
 - Expose MFE1 Modules
 
   - Update webpack.config.js
+  - http://localhost:4201/remoteEntry.js
 
   ```
       const {
@@ -68,3 +69,24 @@
   - Check, how the remoteEntry loaded as route
 - update app.component.html
   - provide nagigation link
+- ng serve shell
+
+# S5 this is repeat of S3 :: MFE2 TrainsModule
+
+- ng g m --project=mfe2 --flat --routing=true trains/trains
+- ng g c --project=mfe2 --module=trains trains/trains-search
+
+- update trains-route-module
+- update app.module.ts
+  - Add Trains Module in Imports
+- Update app-component.html
+  - Add router-outlet
+- ng serve mfe2
+
+  - http://localhost:4202
+  - http://localhost:4202/trains-search
+
+- Expose MFE2 Modules
+
+  - Update webpack.config.js
+  - http://localhost:4202/remoteEntry.js
