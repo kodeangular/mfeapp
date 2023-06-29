@@ -9,8 +9,8 @@
 # S2
 
 - ng add @angular-architects/module-federation --project shell --type host --port 4200
-- ng add @angular-architects/module-federation --project mfe1 --type host --port 4201
-- ng add @angular-architects/module-federation --project mfe2 --type host --port 4202
+- ng add @angular-architects/module-federation --project mfe1 --type remote --port 4201
+- ng add @angular-architects/module-federation --project mfe2 --type remote --port 4202
 
 # S3 : MFE1 : FlightsModule
 
