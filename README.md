@@ -90,3 +90,10 @@
 
   - Update webpack.config.js
   - http://localhost:4202/remoteEntry.js
+
+# LOCAL MODULE :: RESUABLE WITH APPLICATION as MODULE
+
+- ng generate application lme1
+- ng g m --project=lme1 --flat --routing=true bus/bus
+- ng g c --project=lme1 --module=bus bus/bus-search
+- ng serve lme1 --port=4203
