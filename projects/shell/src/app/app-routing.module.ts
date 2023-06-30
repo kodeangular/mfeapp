@@ -21,6 +21,11 @@ const routes: Routes = [
         exposedModule: './Module',
       }).then((m) => m.TrainsModule),
   },
+  {
+    path: 'bus',
+    loadChildren: () =>
+      import('../../../lme1/src/app/bus/bus.module').then((m) => m.BusModule),
+  },
 ];
 
 @NgModule({
